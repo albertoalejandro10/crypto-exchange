@@ -1,5 +1,5 @@
 <template>
-  <a href="https://github.com/albertoalejandro10/" target="_blank">
+  <a href="https://github.com/albertoalejandro10/crypto-exchange" target="_blank">
     <button
       class="inline-flex items-center justify-center rounded-lg border border-gray-200 bg-white px-2 py-2 text-gray-500 transition hover:text-gray-700 focus:outline-none focus:ring"
     >
