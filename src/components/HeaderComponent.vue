@@ -3,8 +3,10 @@
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-4 lg:px-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <div class="flex justify-center items-center gap-x-4 text-center sm:text-left">
-          <span class="icon-[hugeicons--exchange-02] text-3xl text-green-500"></span>
-          <h1 class="text-xl font-bold text-gray-200 sm:text-2xl">Crypto Exchange</h1>
+          <RouterLink class="flex items-center gap-x-2" to="/">
+            <span class="icon-[hugeicons--exchange-02] text-3xl text-green-500"></span>
+            <h1 class="text-xl font-bold text-gray-200 sm:text-2xl">Crypto Exchange</h1>
+          </RouterLink>
           <div class="flex gap-x-4">
             <button
               class="hidden sm:block text-xs font-thin text-gray-100"
