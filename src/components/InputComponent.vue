@@ -5,8 +5,10 @@
     <input
       type="text"
       id="Search"
-      placeholder="Search for..."
-      class="w-full rounded-md bg-gray-50 border-gray-200 py-2 pl-2 pe-10 shadow-sm sm:text-sm"
+      placeholder="Search by name"
+      class="w-full rounded-md bg-white border border-gray-200 py-2 pl-2 pe-10 shadow-sm sm:text-sm"
+      :value="modelValue"
+      @input="updateValue"
     />
 
     <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
@@ -32,6 +34,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  modelValue: String
+})
 
-<style scoped></style>
+const emit = defineEmits(['update:modelValue'])
+const updateValue = (event: Event): void => {
+  emit('update:modelValue', (event.target as HTMLInputElement).value)
+}
+</script>

@@ -7,7 +7,7 @@
             <span class="icon-[hugeicons--exchange-02] text-3xl text-green-500"></span>
             <h1 class="text-xl font-bold text-gray-200 sm:text-2xl">Crypto Exchange</h1>
           </RouterLink>
-          <div class="flex gap-x-4">
+          <!-- <div class="flex gap-x-4">
             <button
               class="hidden sm:block text-xs font-thin text-gray-100"
               v-for="(item, index) in links"
@@ -15,7 +15,7 @@
             >
               {{ item.title }}
             </button>
-          </div>
+          </div> -->
         </div>
         <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
           <CreatorButtonComponent />
@@ -27,9 +27,10 @@
 </template>
 
 <script setup lang="ts">
+import type { Link } from '@/interfaces/Link'
+
 import CreatorButtonComponent from './CreatorButtonComponent.vue'
 import GitHubButtonComponent from './GitHubButtonComponent.vue'
-import type { Link } from '@/interfaces/Link'
 
 interface Props {
   links: Link[]
